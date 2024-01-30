@@ -49,6 +49,7 @@ html {
     background: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(52, 49, 49, 0.57), rgba(0, 0, 0, .5)), 
     url(/img/imagen-background-black.png);   
     background-size: cover;
+    box-sizing: border-box;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -143,6 +144,21 @@ html {
 
 .contenedor-proyectos {
     background: linear-gradient(to bottom, rgb(15, 14, 14), rgb(27, 26, 26), rgba(0, 0, 0, 1));
-    height: 100vh;
-    
+    height: 130vh;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.section-proyectos {
+    margin: 15vh;
+    padding: 10vh;
+}
+
+.cards {
+    padding: 5px;
+    margin: 5px;
+}
+
