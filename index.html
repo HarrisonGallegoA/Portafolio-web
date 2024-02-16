@@ -17,51 +17,46 @@
     <!--NAV-->
     <div class="contenedor-header">
         <header>
-            <nav>
+            <div class="logo">
+                <a href="#">HG</a>
+            </div>
+            <nav id="nav">
                 <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#about-me">Acerca de mi</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#Contactos">Contacto</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">Home</a></li>
+                    <li><a href="#about-me" onclick="seleccionar()">About me</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">Proyects</a></li>
+                    <li><a href="#Contactos" onclick="seleccionar()">Contact</a></li>
                 </ul>
             </nav>
+            <div class="nav-responsive" onclick="mostrarOcultar()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </header>
     </div>
     <!--CONTENEDOR INICIO-->
     <div id="inicio" class="contenedor-inicio">
+        <h3 class="beta">Beta</h3>
         <section class="section-inicio">
-            <div class="texto-beta">
-                <h3>Beta</h3>
-            </div>
             <div class="contenido-inicio">
                 <h2>¡Hello!, I am</h2>
                 <h1>Harrison Gallego A.</h1>
                 <h4>Developer <span style="padding-left: 8px; padding-right: 8px;">|</span> frontend <span
                         style="padding-left: 8px; padding-right: 8px;">|</span> backend </h4>
-            </div>
-            <div class="boton-cv">
                 <button type="button" onclick="descargarPdf()">Descargar CV</button>
             </div>
-            <!--
-            <div class="avatar">
-                <img src="/img/imagenPrueba.png" alt="">
-            </div>
-            -->
         </section>
     </div>
     <!--CONTENEDOR ABOUT ME-->
     <div id="about-me" class="contenedor-about-me">
         <section class="section-about-me">
-            <div class="contenido-about-me">
-                <h1>About me</h1>
-                <p>I am a fullstack developer who easily navigates every technology that emerges every day, I am a
-                    person capable of working both in a team and alone and you can stand out and improve myself every
-                    day.
+            <h1>About me</h1>
+            <p>I am a fullstack developer who easily navigates every technology that emerges every day, I am a
+                person capable of working both in a team and alone and you can stand out and improve myself every
+                day.
 
-                    I am fascinated by developing projects and putting into practice all the knowledge that I am
-                    acquiring and being able to challenge myself and along the way, learn from my mistakes and perfect
-                    my learning and work methods.</p>
-            </div>
+                I am fascinated by developing projects and putting into practice all the knowledge that I am
+                acquiring and being able to challenge myself and along the way, learn from my mistakes and perfect
+                my learning and work methods.</p>
         </section>
     </div>
     <!--CONTENEDOR HABILIDADES-->
@@ -125,11 +120,9 @@
     </div>
 
     <!--CONTENEDOR PROYECTOS-->
-    <div class="contenedor-proyectos">
-        <section id="proyectos" class="section-proyectos">
-            <div class="texto-proyectos">
-                <h1>Proyectos</h1>
-            </div>
+    <div id="proyectos" class="contenedor-proyectos">
+        <section class="section-proyectos">
+            <h1>Proyectos</h1>
             <div class="cards">
 
                 <div id="card-uno"
@@ -232,7 +225,7 @@
 
     <!--CONTENEDOR FOOTER-->
     <!--PRUEBA-->
-
+<!--
     <footer>
         <div id="Contactos" class="contenedor-footer">
             <div class="footer">
@@ -259,6 +252,7 @@
             </div>
         </div>
     </footer>
+    -->
 
     <!--JS-->
     <script src="/js/main.js"></script>
