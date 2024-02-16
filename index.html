@@ -74,10 +74,10 @@
     </div>
     <!--CONTENEDOR MODALES-->
 
-    <div id="overlay"></div>
+    <div id="overlay-uno" onclick="closeModal('modal-uno', 'overlay-uno')"></div>
     <!--MODAL UNO-->
     <div id="modal-uno" class="modal">
-        <button type="button" id="btn-close" onclick="closeModal('modal-uno')"><i
+        <button type="button" id="btn-close" onclick="closeModal('modal-uno', 'overlay-uno')"><i
                 class="fa-regular fa-circle-xmark"></i></button>
         <div class="contenedor-modal">
             <h2>Generador de reportes</h2>
@@ -90,9 +90,10 @@
         </div>
     </div>
 
+    <div id="overlay-dos" onclick="closeModal('modal-dos', 'overlay-dos')"></div>
     <!--MODAL DOS-->
     <div id="modal-dos" class="modal">
-        <button type="button" id="btn-close" onclick="closeModal('modal-dos')"><i
+        <button type="button" id="btn-close" onclick="closeModal('modal-dos', 'overlay-dos')"><i
                 class="fa-regular fa-circle-xmark"></i></button>
         <div class="contenedor-modal">
             <h2>Glamping GBC System</h2>
@@ -108,9 +109,10 @@
         </div>
     </div>
 
+    <div id="overlay-tres" onclick="closeModal('modal-tres', 'overlay-tres')"></div>
     <!--MODAL TRES-->
     <div id="modal-tres" class="modal">
-        <button type="button" id="btn-close" onclick="closeModal('modal-tres')"><i
+        <button type="button" id="btn-close" onclick="closeModal('modal-tres', 'overlay-tres')"><i
                 class="fa-regular fa-circle-xmark"></i></button>
         <div class="contenedor-modal">
             <h2>Inventario Calzado</h2>
@@ -143,7 +145,7 @@
                             <i id="html" class="fa-brands fa-html5"></i>
                             <i id="css" class="fa-brands fa-css3-alt"></i>
                         </div>
-                        <button type="button" onclick="openModal('modal-uno')"
+                        <button type="button" onclick="openModal('modal-uno', 'overlay-uno')"
                             class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-neutral-900 rounded-lg hover:bg-amber-900 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Leer más
                             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="" fill="none"
@@ -176,7 +178,7 @@
                             <i id="php" class="fa-brands fa-php"></i>
                             <i id="js" class="fa-brands fa-js"></i>
                         </div>
-                        <button type="button" onclick="openModal('modal-dos')"
+                        <button type="button" onclick="openModal('modal-dos', 'overlay-dos')"
                             class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-neutral-900 rounded-lg hover:bg-amber-900 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Leer más
                             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="" fill="none"
@@ -207,7 +209,7 @@
                             <i id="css" class="fa-brands fa-css3-alt"></i>
                             <i id="js" class="fa-brands fa-js"></i>
                         </div>
-                        <button type="button" onclick="openModal('modal-tres')"
+                        <button type="button" onclick="openModal('modal-tres', 'overlay-tres')"
                             class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-neutral-900 rounded-lg hover:bg-amber-900 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Leer más
                             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="" fill="none"
