@@ -122,7 +122,7 @@ html {
 .contenido-inicio h2 {
     padding: 0;
     margin: 0;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 300;
     transition: 0.3s;
 }
@@ -130,14 +130,14 @@ html {
 .contenido-inicio h1 {
     padding: 0;
     margin: 0;
-    font-size: 6em;
+    font-size: 5.5em;
     font-weight: 800;
     color: rgba(226, 204, 81, .4);
     transition: 0.3s;
 }
 
 .contenido-inicio h4 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     transition: 0.3s;
 }
 
@@ -363,14 +363,14 @@ html {
     color: #fff;
     padding: 5vh;
     margin: 2vh;
-    font-size: 1.9em;
+    font-size: 1.8em;
     font-weight: 400;
 }
 
 .cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     gap: 5vh 5vh;
     flex-wrap: wrap;
     padding: 10px 30px;
@@ -409,84 +409,79 @@ html {
     gap: 5px;
 }
 
-#html {
-    color: orange;
-    font-size: 30px;
+/*ICONOS PROYECTO*/
+.iconos-proyecto-svg {
+    width: 25px;
 }
 
-#css {
-    color: blue;
-    font-size: 30px;
+#php-svg{
+    width:40px;
 }
 
-#laravel {
-    color: red;
-    font-size: 30px;
-}
+/* FOOTER*/
 
-#php {
-    color: rgb(54, 95, 120);
-    font-size: 30px;
-}
-
-#js {
-    color: rgba(229, 229, 4, 0.929);
-    font-size: 30px;
-}
-
-/* FOOTER 
-
-.contenedor-footer {
-    background: linear-gradient(to top, rgba(30, 35, 30, .8), rgba(30, 35, 38, .8));
-    height: 50vh;
-    padding: 30px;
-}
-
-.footer .contactos-list{
-    max-width: 100%;
-    margin: auto;
-    padding: 10px;
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #0e0e0ee4;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+}
+
+.logo-footer {
+    height: 80px;
+    margin-bottom: 1rem;
+    font-size: 36px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.711);
+    text-decoration: none;
+}
+
+.contenedor-redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 3rem;
+    gap: 20px 40px;
 }
 
-.contactos-list h2 {
-    margin: 10px;
-    padding: 5px;
-    text-align: center;
-    font-size: 1.3em;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.contactos-list ul{
-    display: flex;
-    list-style: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px 10px;
+.contenedor-redes-sociales i {
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1.9em;
+    transition: 0.3s;
 }
 
-.span-list {
-    padding-left: 10px;
-    padding-right: 10px;
+#linkedin-footer:hover {
+    color: #18709f;
 }
 
-.footer .copyrigth {
-    height: 12vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    font-size: 1em;
-    color: rgba(0, 0, 0, 0.858);
-*/
+#email-footer:hover {
+    color: #aa0000e0;
+}
+
+#discord-footer:hover {
+    color: #27355e;
+}
+
+#github-footer:hover {
+    color: #00000079;
+}
+
+#instagram-footer:hover {
+    color: rgb(243, 57, 88);
+}
+
+.copyright {
+    font-size: 0.9em;
+    color: #fff;
+    opacity: 0.3;
+    text-align: center;
+}
 
 /* Responsive */
 
@@ -502,17 +497,21 @@ html {
     nav.responsive {
         display: block;
         position: absolute;
-        right: 0;
+        right: 5px;
         top: 75px;
-        background-color: rgba(189, 157, 29, 1);
+        background-color: rgb(126, 106, 23);
+        border-radius: 5px;
         width: 180px;
     }
     nav.responsive ul {
         display: block !important;
     }
 
-    nav.responsive ul li {
+    nav.responsive ul .borde-btm {
         border-bottom: 1px  solid #fff;
+        padding: 10px 0;
+    }
+    nav.responsive ul .borde-btm-final {
         padding: 10px 0;
     }
 }
@@ -541,6 +540,10 @@ html {
     /* Aboute me*/
     .contenedor-about-me{
         padding: 50px 50px;
+        height: auto;
+    }
+    .section-about-me {
+        padding: 200px 5px;
     }
     .contenedor-about-me .section-about-me h1 {
         font-size: 1.5em;
@@ -569,6 +572,13 @@ html {
         top: 8px;
         right: 8px;
         font-size: 1em;
+    }
+    /*Footer iconos*/
+    .contenedor-redes-sociales i{
+        font-size: 1.4em;
+    }
+    .copyright {
+        font-size: 0.7em;
     }
 }
 

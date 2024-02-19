@@ -22,10 +22,10 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">Home</a></li>
-                    <li><a href="#about-me" onclick="seleccionar()">About me</a></li>
-                    <li><a href="#proyectos" onclick="seleccionar()">Proyects</a></li>
-                    <li><a href="#Contactos" onclick="seleccionar()">Contact</a></li>
+                    <li class="borde-btm"><a href="#inicio" onclick="seleccionar()">Home</a></li>
+                    <li class="borde-btm"><a href="#about-me" onclick="seleccionar()">About me</a></li>
+                    <li class="borde-btm"><a href="#proyectos" onclick="seleccionar()">Proyects</a></li>
+                    <li class="borde-btm-final"><a href="#Contactos" onclick="seleccionar()">Contact</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultar()">
@@ -50,13 +50,12 @@
     <div id="about-me" class="contenedor-about-me">
         <section class="section-about-me">
             <h1>About me</h1>
-            <p>I am a fullstack developer who easily navigates every technology that emerges every day, I am a
-                person capable of working both in a team and alone and you can stand out and improve myself every
-                day.
-
-                I am fascinated by developing projects and putting into practice all the knowledge that I am
-                acquiring and being able to challenge myself and along the way, learn from my mistakes and perfect
-                my learning and work methods.</p>
+            <p>Soy un desarrollador fullstack que navega fácilmente en cada tecnología que surge cada día, soy un
+                persona capaz de trabajar tanto en equipo como de manera individual y que pueda destacar y mejorar en el
+                día a día.
+                Me fascina desarrollar proyectos y poner en práctica todos los conocimientos que tengo,
+                adquirir y poder desafiarme y en el camino y aprender de mis errores y perfeccionar
+                mis métodos de aprendizaje y trabajo.</p>
         </section>
     </div>
     <!--CONTENEDOR HABILIDADES-->
@@ -130,7 +129,7 @@
                 <div id="card-uno"
                     class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img class="rounded-t-lg" src="/img/imagenPrueba.png" alt="" />
+                        <img class="rounded-t-lg" src="/img/reportesAuditoria-imagen.png" alt="" />
                     </a>
                     <div class="p-5">
                         <a href="#">
@@ -142,8 +141,10 @@
                             proyecto Windows Forms con la finalidad de generar reportes en el area de auditoria de una
                             manera eficiente automatizando el 80% del proceso.</p>
                         <div class="iconos-proyecto">
-                            <i id="html" class="fa-brands fa-html5"></i>
-                            <i id="css" class="fa-brands fa-css3-alt"></i>
+                            <img class="iconos-proyecto-svg" src="/img/html-5.svg" alt="">
+                            <img class="iconos-proyecto-svg" src="/img/css-3.svg" alt="">
+                            <img class="iconos-proyecto-svg" src="/img/c-sharp.svg" alt="">
+                            <img class="iconos-proyecto-svg" src="/img/amazon-database.svg" alt="">
                         </div>
                         <button type="button" onclick="openModal('modal-uno', 'overlay-uno')"
                             class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-neutral-900 rounded-lg hover:bg-amber-900 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -160,7 +161,7 @@
                 <div id="card-dos"
                     class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img class="rounded-t-lg" src="/img/imagenPrueba.png" alt="" />
+                        <img class="rounded-t-lg" src="/img/gbcSystem-imagen.png" alt="" />
                     </a>
                     <div class="p-5">
                         <a href="#">
@@ -172,11 +173,12 @@
                             framework laravel que cumple diferentes funciones como reservar, check-in, check-out del
                             glamping, como tambien gestión del inventario.</p>
                         <div class="iconos-proyecto">
-                            <i id="html" class="fa-brands fa-html5"></i>
-                            <i id="css" class="fa-brands fa-css3-alt"></i>
-                            <i id="laravel" class="fa-brands fa-laravel"></i>
-                            <i id="php" class="fa-brands fa-php"></i>
-                            <i id="js" class="fa-brands fa-js"></i>
+                            <img class="iconos-proyecto-svg" src="/img/html-5.svg" alt="">
+                            <img class="iconos-proyecto-svg" src="/img/css-3.svg" alt="">
+                            <img class="iconos-proyecto-svg" src="/img/laravel.svg" alt="">
+                            <img class="iconos-proyecto-svg" src="/img/javascript.svg" alt="">
+                            <img id="php-svg" src="/img/new-php-logo.svg" alt="">
+                            <img class="iconos-proyecto-svg" src="/img/mysql-icon.svg" alt="">
                         </div>
                         <button type="button" onclick="openModal('modal-dos', 'overlay-dos')"
                             class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-neutral-900 rounded-lg hover:bg-amber-900 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -193,7 +195,7 @@
                 <div id="card-tres"
                     class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
-                        <img class="rounded-t-lg" src="/img/imagenPrueba.png" alt="" />
+                        <img class="rounded-t-lg" src="/img/Calzado-AngularN1.png" alt="" />
                     </a>
                     <div class="p-5">
                         <a href="#">
@@ -205,9 +207,9 @@
                             algunos conocimientos de html, css y lo más importante que es javascript al igual que un
                             login con google y la gestión de un inventario básico.</p>
                         <div class="iconos-proyecto">
-                            <i id="html" class="fa-brands fa-html5"></i>
-                            <i id="css" class="fa-brands fa-css3-alt"></i>
-                            <i id="js" class="fa-brands fa-js"></i>
+                            <img class="iconos-proyecto-svg" src="/img/html-5.svg" alt="">
+                            <img class="iconos-proyecto-svg" src="/img/css-3.svg" alt="">
+                            <img class="iconos-proyecto-svg" src="/img/javascript.svg" alt="">
                         </div>
                         <button type="button" onclick="openModal('modal-tres', 'overlay-tres')"
                             class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-neutral-900 rounded-lg hover:bg-amber-900 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -225,36 +227,19 @@
         </section>
     </div>
 
-    <!--CONTENEDOR FOOTER-->
-    <!--PRUEBA-->
-<!--
-    <footer>
-        <div id="Contactos" class="contenedor-footer">
-            <div class="footer">
-                <div class="contactos-list">
-                    <h2>Contactos</h2>
-                    <ul>
-                        <li>
-                            <p><i class="fa-solid fa-envelope"></i><span
-                                    class="span-list">Correo:</span>harrisongallego59@gmail.com</p>
-                        </li>
-                        <li>
-                            <p><i class="fa-solid fa-phone"></i><span class="span-list">Telefono:</span>+57 3007668128
-                            </p>
-                        </li>
-                        <li>
-                            <p><i class="fa-brands fa-github"></i><span class="span-list">Github:</span><a
-                                    href="https://github.com/HarrisonGallegoA">HarrisonGallegoA</a></p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="copyrigth">
-                    <p>&copy; Todos los derechos a: Harrison Gallego Arango - 2024</p>
-                </div>
-            </div>
+    <!--FOOTER-->
+
+    <footer id="Contactos">
+        <a class="logo-footer" href="">HG</a>
+        <div class="contenedor-redes-sociales">
+            <a href="https://www.linkedin.com/in/harrisongallego/"><i id="linkedin-footer" class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i id="email-footer" class="fa-solid fa-envelope"></i></a>
+            <a href=""><i id="discord-footer" class="fa-brands fa-discord"></i></a>
+            <a href="https://github.com/HarrisonGallegoA"><i id="github-footer" class="fa-brands fa-square-github"></i></a>
+            <a href=""><i id="instagram-footer" class="fa-brands fa-instagram"></i></a>
         </div>
+        <span class="copyright">&copy;Copyright 2024 Harrison Gallego Arango</span>
     </footer>
-    -->
 
     <!--JS-->
     <script src="/js/main.js"></script>
