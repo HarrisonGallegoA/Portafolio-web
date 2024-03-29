@@ -202,7 +202,7 @@ html {
 }
 
 .contenedor-about-me .section-about-me h1 {
-    font-size: 1.9em;
+    font-size: 1.8em;
     color: #fff;
     font-weight: 400;
     margin-bottom: 20px;
@@ -235,6 +235,133 @@ html {
 .contenedor-iconos i {
     color: #fff;
     font-size: 3.2em;
+}
+
+/*CONTENEDOR EDUCACIÓN Y EXPERIENCIA LABORAL INCOMPLETO--------*/
+
+.contenedor-curriculum {
+    background: linear-gradient(to bottom, rgb(12, 12, 12), rgb(15, 14, 14), rgb(15, 14, 14));
+    color: #fff;
+}
+
+.section-curriculum {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20vh 2vh;
+}
+
+.section-curriculum h1 {
+    font-size: 1.8em;
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+
+.section-curriculum .fila {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    width: 49%;
+    padding: 0 20px;
+}
+
+.fila .izquierda {
+    border-right: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.fila .derecha {
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.section-curriculum .fila .item {
+    position: relative;
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: rgba(164, 164, 164, 0.353);
+    border-radius: 6px;
+}
+
+.section-curriculum .fila .izq {
+    border-right: 3px #fff solid;
+    margin-right: 20px;
+}
+
+.section-curriculum .fila .der {
+    border-left: 3px #fff solid;
+    margin-left: 20px;
+}
+
+.section-curriculum .fila .contectori {
+    position: absolute;
+    height: 2px;
+    background-color: #fff;
+    width: 47px;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+
+.section-curriculum .fila .contectori .circuloi {
+    display: block;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+.section-curriculum .fila .contectord {
+    position: absolute;
+    height: 2px;
+    background-color: #fff;
+    width: 47px;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+
+.section-curriculum .fila .contectord .circulod {
+    display: block;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+.section-curriculum .fila h4{
+    font-size: 1.1em;
+    font-weight: 600;
+    color: rgb(255, 255, 255, 0.8);
+}
+
+.section-curriculum .fila .span-uni{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #bd9d1d;
+}
+
+.section-curriculum .fila .span-empresa{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #bd9d1c;
+}
+
+.section-curriculum .fila .fecha{
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #bd9d1d;
+}
+
+.section-curriculum .fila p{
+    font-size: 0.9em;
+    line-height: 1.8em;
+    font-weight: 200;
 }
 
 /* CONTENEDOR MODALES */
@@ -579,6 +706,44 @@ footer {
     }
     .copyright {
         font-size: 0.7em;
+    }
+    /*Educacion y experiencia laboral*/
+    .section-curriculum h1 {
+        font-size: 1.5em;
+    }
+    .section-curriculum .fila {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .col {
+        width: 95%;
+    }
+
+    .section-curriculum .fila h4{
+        font-size: 1.1em;
+    }
+    
+    .section-curriculum .fila .span-uni{
+        font-size: 1em;
+    }
+    
+    .section-curriculum .fila .span-empresa{
+        font-size: 1em;
+    }
+    
+    .section-curriculum .fila .fecha{
+        font-size: 0.9em;
+    }
+    
+    .section-curriculum .fila p{
+        font-size: 0.8em;
+    }
+
+    /*Proyectos*/
+    .section-proyectos h1 {
+        font-size: 1.6em;
     }
 }
 
