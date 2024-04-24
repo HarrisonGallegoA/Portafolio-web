@@ -22,11 +22,11 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li class="borde-btm"><a href="#inicio" onclick="seleccionar()">Home</a></li>
-                    <li class="borde-btm"><a href="#about-me" onclick="seleccionar()">About me</a></li>
-                    <li class="borde-btm"><a href="#Eduacion" onclick="seleccionar()">Education</a></li>
-                    <li class="borde-btm"><a href="#proyectos" onclick="seleccionar()">Proyects</a></li>
-                    <li class="borde-btm-final"><a href="#Contactos" onclick="seleccionar()">Contact</a></li>
+                    <li class="borde-btm"><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li class="borde-btm"><a href="#about-me" onclick="seleccionar()">Acerca de mi</a></li>
+                    <li class="borde-btm"><a href="#Eduacion" onclick="seleccionar()">Eduacación y Experiencia</a></li>
+                    <li class="borde-btm"><a href="#proyectos" onclick="seleccionar()">Proyectos</a></li>
+                    <li class="borde-btm-final"><a href="#Contactame" onclick="seleccionar()">Contactame</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultar()">
@@ -50,7 +50,7 @@
     <!--CONTENEDOR ABOUT ME-->
     <div id="about-me" class="contenedor-about-me">
         <section class="section-about-me">
-            <h1>About me</h1>
+            <h1>Acerca de mi</h1>
             <p>Soy un desarrollador fullstack que navega fácilmente en cada tecnología que surge cada día, soy un
                 persona capaz de trabajar tanto en equipo como de manera individual y que pueda destacar y mejorar en el
                 día a día.
@@ -287,6 +287,31 @@
                     </div>
                 </div>
 
+            </div>
+        </section>
+    </div>
+
+    <!--CONTACT ME SIN TERMINAR-->
+
+    <div id="Contactame" class="contenedor-contact">
+        <section class="section-contact">
+            <div class="titulo-contacto">
+                <h1>Contactame</h1>
+            </div>
+            <div class="formulario-contact">
+                <form action="https://formspree.io/f/xbjnzvkk" method="POST">
+                    <label>
+                        <input type="text" name="name" class="feedback-input" placeholder="Nombre de la empresa" required>
+                    </label>
+                    <label>
+                        <input type="email" name="email" class="feedback-input" placeholder="Email" required>
+                    </label>
+                    <label>
+                        <textarea name="message" class="feedback-input" placeholder="Mensaje"></textarea>
+                    </label>
+                    <!-- your other form fields go here -->
+                    <button class="boton-enviar" type="submit">Enviar</button>
+                </form>
             </div>
         </section>
     </div>
